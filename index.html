@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Index</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,500&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="headerContainer">
+        <h1 id="header">
+            I figured I could share my thought process of doing something that has been quite 
+            typical in my day-to-day life recently. <br>
+            Specifically, that is how I like to build a website. <br>
+            And it's only fitting that I build a website to show how I build a website.
+        </h1>
+    </div>
+
+    <div id="body" x-data="{xData:'xData'}">
+
+        <!-- Content -->
+
+        <h1 id="contentHeader" class="bodyHeader bodyElement" 
+        @click="scrollContent(header, '-40vh', false)
+        scrollContent(contentHeader, '-55vh', false)
+        scrollContent(contentTitle, '-70vh', false)">
+            Content
+        </h1>
+
+        <p id="contentTitle" class="bodyText bodyTitle bodyElement"
+        @click="scrollContent(contentText, '-60vh', false)
+        scrollContent(codeHeader, '-30vh', false)">
+            content before code
+        </p>
+
+        <!-- <div id="contentTextHider"></div> -->
+        <p id="contentText" class="bodyText bodyElement">
+            solid concept of information <br> 
+            illustrated draft of layout <br>
+            idea of necessary tools <br> <br>
+            During this phase I am, more or less, creating a foundation in my head and 
+            on paper. Ideas may change and words will adapt, of course, but this process
+            creates the static concept of what will be built.
+        </p>
+
+        <!-- Content /-->
+
+
+        <!-- Code -->
+
+        <h1 id="codeHeader" class="bodyHeader bodyElement"
+        @click="scrollContent(contentHeader, '-100vh', false)
+        scrollContent(contentTitle, '-120vh', false)
+        scrollContent(contentText, '-120vh', false)
+        scrollContent(codeHeader, '-85vh', false)
+        scrollContent(codeTitle, '-70vh', false)">
+            Code
+        </h1>
+        
+        <p id="codeTitle" class="bodyText bodyTitle bodyElement"
+        @click="scrollContent(codeText, '-60vh', false)
+        scrollContent(cascadeHeader, '-30vh', false)">
+            code before cascade... <br>
+            sometimes
+        </p>
+
+        <p id="codeText" class="bodyText bodyElement">
+            layout before style <br>
+            font and general position may be my personal exception <br>
+            finished layout helps visualize ideal style <br> <br>
+            Here is where the visual structure begins to manifest. It is where I begin 
+            to lay the foundation for the later phases. Styling is (almost) entirely ommited 
+            during this.
+        </p>
+
+        <!-- Code /-->
+
+
+        <!-- Cascade -->
+
+        <h1 id="cascadeHeader" class="bodyHeader bodyElement"
+        @click="scrollContent(codeHeader, '-120vh', false)
+        scrollContent(codeTitle, '-120vh', false)
+        scrollContent(codeText, '-120vh', false)
+        scrollContent(cascadeHeader, '-85vh', false)
+        scrollContent(cascadeTitle, '-70vh', false)">
+            Cascade
+        </h1>
+
+        <p id="cascadeTitle" class="bodyText bodyTitle bodyElement"
+        @click="scrollContent(cascadeText, '-60vh', false)
+        scrollContent(comingAliveHeader, '-30vh', false)">
+            cascade before coming alive
+        </p>
+
+        <p id="cascadeText" class="bodyText bodyElement">
+            more precise positioning <br>
+            appropriate coloring and styling <br>
+            intended aesthetic implemented <br> <br>
+            This area and the next are focused primarily on aesthetic and 
+            the visual human experience. It is much more about fine tuning and 
+            polishing. This is where I begin to let loose a little and try out 
+            weird and interesting designs.
+        </p>
+
+        <!-- Cascade /-->
+
+
+        <!-- Coming Alive -->
+
+        <h1 id="comingAliveHeader" class="bodyHeader bodyElement"
+        @click="scrollContent(cascadeHeader, '-120vh', false)
+        scrollContent(cascadeTitle, '-120vh', false)
+        scrollContent(cascadeText, '-120vh', false)
+        scrollContent(comingAliveHeader, '-85vh', false)
+        scrollContent(comingAliveTitle, '-70vh', false)">
+            Coming Alive
+        </h1>
+
+        <p id="comingAliveTitle" class="bodyText bodyTitle bodyElement"
+        @click="scrollContent(comingAliveText, '-60vh', false)
+        scrollContent(endHeader, '-30vh', false)">
+            adding interactivity
+        </p>
+
+        <p id="comingAliveText" class="bodyText bodyElement">
+            javascript <br>
+            functionality <br>
+            animations <br> <br>
+            Much like the cascade section, this area is very much about the 
+            human experience. But rather than being purely visual, this is 
+            more focused on interactivity and maneuverability.
+        </p>
+
+        <!-- Coming Alive /-->
+
+
+        <!-- end -->
+
+        <h1 id="endHeader" class="bodyHeader bodyElement"
+        @click="scrollContent(comingAliveHeader, '-120vh', false)
+        scrollContent(comingAliveTitle, '-120vh', false)
+        scrollContent(comingAliveText, '-120vh', false)
+        scrollContent(endHeader, '-85vh', false)
+        scrollContent(endTitle, '-70vh', false)">
+            Okay Cool
+        </h1>
+
+        <p id="endTitle" class="bodyText bodyElement"><3</p>
+
+        <!-- end /-->
+
+    </div>
+
+    <script src="JS/javascript.js"></script>
+</body>
+</html>
