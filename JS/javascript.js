@@ -1,5 +1,7 @@
-let body = document.getElementById("body");
-body.style.height = "window.innerHeight";
+function setWindowHeight() {
+    let body = document.getElementById("body");
+    body.style.height = "window.innerHeight";
+}
 
 let previous = [];
 
@@ -37,3 +39,4 @@ function scrollContent(element, height, rmPrevious) {
     return;
 }
 
+setWindowHeight();
